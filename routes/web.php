@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+//后台的用户管理
+Route::group([], function(){
+
+	Route::resource('admin/user','Admin\UserController');
+
+});
